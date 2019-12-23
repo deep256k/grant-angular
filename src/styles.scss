@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+.route-link {
+  cursor: pointer;
+}
+
+body {
+  margin: 0px;
+}
+
+.max-width-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+input,
+select,
+button:focus {
+  outline: none;
+}
+
+p {
+  margin: 0px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

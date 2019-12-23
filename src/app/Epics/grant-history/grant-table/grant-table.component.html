@@ -1,0 +1,15 @@
+  <div>
+    <table>
+      <tr>
+        <th *ngFor="let heading of tableHeading">{{heading}}</th>
+      </tr>
+      <tr *ngFor = "let data of data">
+        <td>{{data.legalName}}</td>
+        <td>{{data.EIN}}</td>
+        <td>{{data.Address}}</td>
+        <td>{{data.lastGrant}}</td>
+        <td>{{data.interestArea}}</td>
+        <td><button class="selct-button">select</button></td>
+      </tr>
+    </table>
+  </div>

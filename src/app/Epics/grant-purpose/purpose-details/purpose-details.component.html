@@ -1,0 +1,14 @@
+ <div class="purpose-details">
+   <app-section-heading [sectionHeading]="headingContent"></app-section-heading>
+   <p class="indicate-purpose">Indicate the purpose of this grant.</p>
+   <div class="purpose-options">
+     <select id="purpose" [(ngModel)= "selectedOptions" ]>
+       <option *ngFor="let option of purposeOptions">{{option}}</option>
+     </select>
+   </div>
+   <button class="add-items" (click)="commentBox()">Add Additional Comments +</button>
+   <div class="additional-info" *ngIf="showComment">
+     <p>Additional Comments:</p>
+     <textarea name="message" rows="30" cols="10">Lorem ipsum dolor sit amet</textarea>
+   </div>
+ </div>

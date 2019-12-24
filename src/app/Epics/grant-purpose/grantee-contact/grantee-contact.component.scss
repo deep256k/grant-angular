@@ -1,0 +1,51 @@
+.grant-contact {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #505050;
+}
+
+.user-name,
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.grantee-heading {
+  font-family: BerkeleyStd;
+  font-size: 24px;
+  color: #022737;
+}
+
+.enter-note {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #505050;
+  padding: 15px 0px 30px 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.user-details {
+  padding-top: 30px;
+}
+
+  p {
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    color: #505050;
+  }
+
+  input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+  }
+
+.alert {
+  color: red;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  padding: 10px 0px 0px 0px;
+}

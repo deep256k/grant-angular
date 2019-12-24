@@ -12,7 +12,6 @@ export class GrantTabsComponent implements OnInit {
 
   ngOnInit() {
     this.http.get('http://demo7246422.mockable.io/').subscribe(response => {
-      console.log('responsse is ', response);
       this.CharityTable = response;
     });
   }

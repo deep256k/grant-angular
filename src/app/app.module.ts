@@ -16,11 +16,18 @@ import { GrantTabsComponent } from './Epics/grant-history/grant-tabs/grant-tabs.
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { GrantTableComponent } from './Epics/grant-history/grant-table/grant-table.component';
+import { GrantPurposeComponent } from './Epics/grant-purpose/grant-purpose/grant-purpose.component';
+import { GranteeContactComponent } from './Epics/grant-purpose/grantee-contact/grantee-contact.component';
+import { PurposeDetailsComponent } from './Epics/grant-purpose/purpose-details/purpose-details.component';
+import { GrantReviewComponent } from './Epics/grant-review/grant-review/grant-review.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
   { path: 'grant', component: InnerContainerComponent, children: [
-    { path: '', component: GrantSelectionComponent }
+    { path: '', component: GrantSelectionComponent },
+    { path: 'step1', component: GrantPurposeComponent },
+    { path: 'step1/review', component: GrantReviewComponent }
   ] }
 ];
 @NgModule({
@@ -36,14 +43,19 @@ const appRoutes: Routes = [
     GrantSelectionComponent,
     SectionHeadingComponent,
     GrantTabsComponent,
-    GrantTableComponent
+    GrantTableComponent,
+    GrantPurposeComponent,
+    GranteeContactComponent,
+    PurposeDetailsComponent,
+    GrantReviewComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

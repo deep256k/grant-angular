@@ -3,13 +3,13 @@
       <tr>
         <th *ngFor="let heading of tableHeading">{{heading}}</th>
       </tr>
-      <tr *ngFor = "let data of data">
+      <tr *ngFor="let data of tableData; let i = index">
         <td>{{data.legalName}}</td>
         <td>{{data.EIN}}</td>
         <td>{{data.Address}}</td>
         <td>{{data.lastGrant}}</td>
         <td>{{data.interestArea}}</td>
-        <td><button class="selct-button">select</button></td>
+        <td><button class="selct-button" (click)="navigateToPurpose(i)">select</button></td>
       </tr>
     </table>
   </div>

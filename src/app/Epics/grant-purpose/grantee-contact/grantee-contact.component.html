@@ -1,0 +1,24 @@
+ <div class="grant-contact max-width-container">
+   <app-section-heading [sectionHeading]="headingContent"></app-section-heading>
+   <p class="enter-note">Enter contact details of the grantee organization.</p>
+     <div class="user-name">
+       <div>
+         <p>First name*</p>
+         <input type="text" [(ngModel)]="advisorFirstName" (ngModelChange)="valueChange()">
+       </div>
+       <div>
+         <p>Last name*</p>
+         <input type="text" [(ngModel)]="advisorLastName" (ngModelChange)="valueChange()">
+       </div>
+     </div>
+     <div class="user-details">
+       <div>
+         <p>Email Address*</p>
+         <input type="text" [(ngModel)]="advisorEmail" (ngModelChange)="valueChange()">
+       </div>
+       <div>
+         <p>Phone Number (Optional)</p>
+         <input type="number">
+       </div>
+     </div>
+ </div>

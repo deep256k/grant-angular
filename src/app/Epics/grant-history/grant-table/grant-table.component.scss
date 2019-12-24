@@ -1,0 +1,44 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+
+  td,
+  th {
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr td:first-of-type {
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    color: #006778;
+  }
+  tr th {
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    color: #022737;
+  }
+}
+
+.selct-button {
+  margin-left: 40px;
+  width: 95px;
+  height: 30px;
+  border-radius: 18px;
+  border: solid 1px #d4d4d4;
+  background-color: #ffffff;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  color: #006778;
+  cursor: pointer;
+}
+
+.selct-button:focus {
+  outline: none;
+}
+
+.selct-button:hover {
+  background: #006778;
+  color: #ffffff;
+}

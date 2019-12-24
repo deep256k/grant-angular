@@ -1,0 +1,88 @@
+<div class="max-width-container">
+<div class="grant-review">
+  <div class="review-heading">
+   <app-section-heading [sectionHeading]="headingContent"></app-section-heading>
+    <p>Review your grant recommendation information below, edit it if necessary, before submitting.</p>
+  </div>
+  <section class="charity-info">
+    <div class="charity-info-wrapper">
+      <div class="charity-name">
+        <p class="charity-name-heading">Charity Information</p>
+        <p class="section-content">Full Charity Name</p>
+        <p class="selected-content">{{getCharityinfo.name}}</p>
+      </div>
+      <div class="charity-purpose">
+        <p class="charity-name-heading">Grant Purpose & Recognition</p>
+        <p class="section-content">Purpose</p>
+        <p class="selected-content">getSelectedOption</p>
+      </div>
+    </div>
+  </section>
+  <section class="charity-info">
+    <div class="charity-info-wrapper">
+      <div class="charity-name">
+        <p class="section-content">Address</p>
+        <p class="selected-content">{{getCharityinfo.Address}}</p>
+      </div>
+      <div class="charity-purpose">
+        <p class="section-content bold-heading">Grant Recognition</p>
+        <div class="advisor-details">
+          <div class="recon">
+            <span class="recognition-heading">Account Advisor Name: </span>
+            <span class="recognition-content">{{getAdvosorInfo.fname}}
+              {{getAdvosorInfo.lname}}</span>
+          </div>
+          <div>
+            <span class="recognition-heading">Account Advisor Email: </span>
+            <span class="recognition-content">{{getAdvosorInfo.email}}</span>
+          </div>
+        </div>
+        <!-- <div>
+          <span class="recognition-heading">Account Name:</span>
+          <span class="recognition-content">getFundName[0].fundName }}</span>
+        </div> -->
+        <!-- <div>
+          <span class="recognition-heading">Grant Type:</span>
+          <span class="recognition-content">Anonymous</span>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <section class="charity-info">
+    <div class="charity-info-wrapper">
+      <div class="charity-name">
+        <p class="section-content">EIN</p>
+        <p class="selected-content">{{getCharityinfo.EIN}}</p>
+      </div>
+      <!-- <div class="charity-purpose-wrapper">
+        <div class="charity-purpose">
+          <p class="section-content">Please Notify</p>
+          <p class="selected-content">getFormdata.firstName getFormdata.lastName}}</p>
+        </div>
+        <div class="charity-purpose">
+          <p class="section-content">Additional Attribution</p>
+          <p class="selected-content">getFormdata.honorName}}</p>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <section class="charity-info">
+    <div class="charity-info-wrapper">
+      <div class="charity-name">
+        <p class="charity-name-heading">Recommended Amount and Allocation</p>
+        <p class="section-content">Payment</p>
+        <p class="selected-content">One time payment</p>
+        <!-- <p class="section-content padding-top">Timing</p>
+        <p class="selected-content">date.selectedDate}}</p>
+        <p class="section-content padding-top">Grant Amount</p>
+        <p class="selected-content">date.grantAmount}}</p> -->
+      </div>
+      <!-- <div class="charity-purpose">
+             <p class="section-content">Allocation preference</p>
+             <p class="selected-content">props</p>
+         </div> -->
+    </div>
+  </section>
+  <!-- <h1>selected {{date}}</h1> -->
+</div>
+</div>

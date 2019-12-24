@@ -1,0 +1,84 @@
+.review-heading {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #505050;
+
+  p {
+    padding-top: 15px;
+    margin: 0px;
+  }
+
+}
+
+.charity-info {
+  padding: 50px 0px 20px 0px;
+  border-bottom: 1px solid #505050;
+}
+
+.charity-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.charity-name-heading {
+  font-family: BerkeleyStd;
+  font-size: 24px;
+  color: #022737;
+  padding-bottom: 15px;
+}
+
+.section-content {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #505050;
+}
+
+.selected-content {
+  font-family: HelveticaNeue-bold;
+  font-size: 16px;
+  color: #022737;
+}
+
+.recognition-heading {
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  color: #022737;
+}
+
+.recognition-content {
+  font-family: HelveticaNeue-bold;
+  font-size: 16px;
+  color: #022737;
+}
+
+.recognition-content {
+  font-family: HelveticaNeue-bold;
+}
+
+.charity-name,
+.charity-purpose {
+  width: 100%;
+}
+
+.button-wrapper {
+  padding-top: 50px;
+}
+
+.charity-purpose-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold-heading {
+  font-family: HelveticaNeue-bold;
+}
+
+.recon {
+  padding-bottom: 10px;
+}
+
+.padding-top {
+  padding-top: 10px;
+}
